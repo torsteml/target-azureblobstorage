@@ -11,6 +11,7 @@ setup(
     py_modules=["target_azureblobstorage"],
     install_requires=[
         "singer-python>=5.0.12",
+        "azure-storage-blob==2.1.0"
     ],
     entry_points="""
     [console_scripts]

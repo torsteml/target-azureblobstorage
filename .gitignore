@@ -1,0 +1,45 @@
+# IDE
+.vscode
+.idea/*
+
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.virtualenvs
+*.egg-info/
+.pytest_cache
+.coverage
+.coverage.*
+coverage.log
+coverage_html
+test-reports/
+
+# Singer Tap state
+.state.json
+
+# Generated test yamls
+tests/end_to_end/test-project/*.yml
+
+# Dev project
+dev-project/.pipelinewise
+dev-project/.env
+dev-project/pipelinewise-config/*_test.yml*
+
+# Docker
+#.env
+
+*.db
+.DS_Store
+venv
+env
+blog_old.md
+node_modules
+*.pyc
+tmp
+
+# Docs
+docs/_build/
+docs/_templates/
+/build/

@@ -94,6 +94,9 @@ def persist_lines(block_blob_service, append_blob_service, blob_container_name, 
             if 'key_properties' not in o:
                 raise Exception("key_properties field is required")
             key_properties[stream] = o['key_properties']
+        elif t == 'ACTIVATE_VERSION':
+            logger.debug("Type {} in message {}"
+                         .format(o['type'], o))
         else:
             raise Exception("Unknown message type {} in message {}"
                             .format(o['type'], o))
