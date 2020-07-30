@@ -65,6 +65,8 @@ def persist_lines(block_blob_service, append_blob_service, blob_container_name, 
             # Get schema for this record's stream
             schema = schemas[o['stream']]
 
+            logger.debug('schema for this records stream {}'.format(schema))
+            logger.debug('Validate record {}'.format(o))
             # Validate record
             validators[o['stream']].validate(o['record'])
 
